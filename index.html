@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible " content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./posts.css" type="text/css"/>
+  <title>Posts</title>
+</head>
+
+<body>
+<!-- add user -->
+  <div>
+    <input type="number" name="id_user" id="id_user" value="" disabled placeholder="automatic id"/>
+    <input type="text" name="user_name" id="user_name" value="" placeholder="enter user_name"/>
+    <button type="button"id="btn_add_user">Add User</button>
+    <button type="button" onclick="update_user()" id="btn_update_user">Update User</button>
+    
+  </div>
+  <br>
+  <!-- add post -->
+  <div>
+    <input type="number" name="user_id" id="user_id" value="" placeholder="enter user_id"/>
+    <input type="text" name="post_text" id="post_text" value="" placeholder="enter your post"/>
+    <button type="button" id="btn_add_post">Add Post</button>
+    <button type="button" onclick="update_post()" id="btn_update_post">Update Post</button>
+    
+  </div>
+  <br>
+  <!-- add comments-->
+  <div>
+    <input type="number" name="post_id" id="post_id" value="" placeholder="enter post_id"/>
+    <input type="number" name="comment_user_id" id="comment_user_id" value="" placeholder="enter comment_user_id"/>
+    <input type="text" name="customer_name" id="customer_name" value="" placeholder="enter customer_name"/>
+    <input type="text" name="comment" id="comment" value="" placeholder="enter your comment"/>
+    <button type="button" id="btn_add_comment">Add Comment</button>
+    <button type="button" onclick="update_comment()" id="btn_update_comment">Update Comment</button>
+  </div>
+  <br>
+  <div id="content"></div>
+  <script src="./posts.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+button{
+  cursor: pointer;
+}
+
+#btn_update_comment,#btn_update_user,#btn_update_post{
+  display: none;
+}
